@@ -18,5 +18,8 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/EpicMorg/Hammer-MCP/releases/download/v0.6.0/hammer-mcp-v0.6.0-win-x64.zip
   InstallerSha256: A5682A80C5175E128FCE37362B262FC5A01D6BA3D47F298629FD70DC43B8ABB4
+- Architecture: x86
+  InstallerUrl: https://github.com/EpicMorg/Hammer-MCP/releases/download/v0.6.0/hammer-mcp-v0.6.0-win-x86.zip
+  InstallerSha256: D8DF4E01D30419EC5F7A05EE6B706694A5D0C103C460BF6F136105AD2467F844
 ManifestType: installer
 ManifestVersion: 1.28.0
