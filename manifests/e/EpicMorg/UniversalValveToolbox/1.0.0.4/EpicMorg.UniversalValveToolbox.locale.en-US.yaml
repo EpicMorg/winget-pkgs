@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: EpicMorg.UniversalValveToolbox
+PackageVersion: 1.0.0.4
+PackageLocale: en-US
+Publisher: EpicMorg
+PublisherUrl: https://github.com/EpicMorg
+PublisherSupportUrl: https://github.com/EpicMorg/UniversalValveToolbox/issues
+Author: EpicMorg
+PackageName: Universal Valve Toolbox
+PackageUrl: https://github.com/EpicMorg/UniversalValveToolbox
+License: MIT
+LicenseUrl: https://github.com/EpicMorg/UniversalValveToolbox/blob/master/LICENSE.md
+Copyright: Copyright (c) EpicMorg
+ShortDescription: Toolbox for easy launching the official Valve SDKs such as Source SDK 2013 SP or MP.
+Description: |-
+  Universal Valve Toolbox is a launcher for the official Valve SDKs and the tools of Source engine games: pick a game you own on Steam (Source SDK 2013, Half-Life 2, Portal, Team Fortress 2, Left 4 Dead 2, Garry's Mod, Black Mesa, Source Filmmaker and more) and start Hammer, Model Viewer, Faceposer and the other SDK tools, your mod projects and helper apps from one window.
+
+  Engines, tools and addons are JSON files that are easy to extend; modes retail, bundle and dev. Needs a running Steam client. Not affiliated with Valve Corporation.
+Moniker: universal-valve-toolbox
+Tags:
+- gamedev
+- hammer
+- modding
+- source-engine
+- source-sdk
+- steam
+- valve
+ReleaseNotes: |-
+  - Fixed SteamInit on program initialization and added tries to launch Steam
+  - Fixed Run project option
+  - Added support for new engines
+  - Added some default addons, but not linked with any engines
+ReleaseNotesUrl: https://github.com/EpicMorg/UniversalValveToolbox/releases/tag/1.0.0.4
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: EpicMorg.UniversalValveToolbox
+PackageVersion: 1.0.0.4
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: EpicMorg-UniversalValveToolbox-1.0.0.4-Release/UniversalValveToolbox.exe
+  PortableCommandAlias: universalvalvetoolbox
+UpgradeBehavior: install
+Commands:
+- universalvalvetoolbox
+ReleaseDate: 2022-04-15
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/EpicMorg/UniversalValveToolbox/releases/download/1.0.0.4/EpicMorg-UniversalValveToolbox-1.0.0.4-Release.zip
+  InstallerSha256: 9A0BAEB661D1895506ECD77C171E1AB3753D0FFAD91BCFB1CB24B5A6829F5416
+ManifestType: installer
+ManifestVersion: 1.28.0
