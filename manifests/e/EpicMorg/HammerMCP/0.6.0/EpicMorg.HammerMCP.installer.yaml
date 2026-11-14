@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: EpicMorg.HammerMCP
+PackageVersion: 0.6.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: hammer-mcp.exe
+  PortableCommandAlias: hammer-mcp
+- RelativeFilePath: hammer-mcp-cli.exe
+  PortableCommandAlias: hammer-mcp-cli
+UpgradeBehavior: install
+Commands:
+- hammer-mcp
+- hammer-mcp-cli
+ReleaseDate: 2026-11-14
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/EpicMorg/Hammer-MCP/releases/download/v0.6.0/hammer-mcp-v0.6.0-win-x64.zip
+  InstallerSha256: A5682A80C5175E128FCE37362B262FC5A01D6BA3D47F298629FD70DC43B8ABB4
+ManifestType: installer
+ManifestVersion: 1.28.0

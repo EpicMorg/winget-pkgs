@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: EpicMorg.HammerMCP
+PackageVersion: 0.6.0
+PackageLocale: en-US
+Publisher: EpicMorg
+PublisherUrl: https://github.com/EpicMorg
+PublisherSupportUrl: https://github.com/EpicMorg/Hammer-MCP/issues
+Author: EpicMorg
+PackageName: Hammer-MCP
+PackageUrl: https://github.com/EpicMorg/Hammer-MCP
+License: MIT
+LicenseUrl: https://github.com/EpicMorg/Hammer-MCP/blob/master/LICENSE
+Copyright: Copyright (c) 2026 EpicMorg
+ShortDescription: Let AI agents see and edit maps in Valve Hammer Editor - live.
+Description: |-
+  Hammer-MCP is an MCP (Model Context Protocol) server for Valve Hammer Editor (Source engine), Hammer++ and related editors. It talks to the editor you already have open through the shell channel Valve built into Hammer and through Hammer's own menu commands - no plugins, no patched editor.
+
+  - Create point entities with keyvalues, set keyvalues, rotate and delete entities live, with Hammer's undo
+  - Save / undo / redo / Run Map / Check for Problems through menu commands
+  - Map knowledge from the saved .vmf: entities, outputs, I/O graph, validation against the game's FGD, asset checks
+  - Compile with Hammer's own Run Map sequences, parsed compile log, leak trace
+
+  hammer-mcp is the tray app (pick the Hammer process, Attach, Start; the agent connects over HTTP, localhost by default); hammer-mcp-cli is the same server without UI for MCP clients that start servers themselves (stdio or HTTP). It never injects into game processes.
+Moniker: hammer-mcp
+Tags:
+- ai
+- gamedev
+- hammer
+- level-design
+- mapping
+- mcp
+- model-context-protocol
+- source-engine
+- valve
+ReleaseNotes: |-
+  The MCP server without the tray app (hammer-mcp-cli, stdio / HTTP) and a container image for MCP catalogs.
+  - Added hammer-mcp-cli: the MCP server without the tray app - stdio (default) or HTTP, Hammer picked with --auto / --pid, --mode; shipped in the release zip.
+  - Public repository: status beta, SECURITY.md, CONTRIBUTING.md, issue templates, demo and screenshots, articles on the Valve Developer Community.
+ReleaseNotesUrl: https://github.com/EpicMorg/Hammer-MCP/releases/tag/v0.6.0
+Documentations:
+- DocumentLabel: Valve Developer Community
+  DocumentUrl: https://developer.valvesoftware.com/wiki/Hammer_MCP_Server
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
